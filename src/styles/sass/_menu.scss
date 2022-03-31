@@ -1,0 +1,195 @@
+header {
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgba(6, 9, 15, 0.4);
+  backdrop-filter: blur(6px);
+
+  border-bottom: 1px solid $black-light;
+
+  position: fixed;
+  z-index: 990;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+
+  display: flex;
+
+  li {
+    margin-left: 24px;
+  }
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.search {
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.bx {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  display: none;
+  @include responsive(s) {
+    display: block;
+  }
+
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 40%;
+
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+
+    width: 70%;
+    height: 2px;
+    display: block;
+    transition: 0.5s ease;
+
+    background-color: $white-dark;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 65%;
+    left: 60%;
+
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+
+    width: 70%;
+    height: 2px;
+    display: block;
+    transition: 0.5s ease;
+
+    background-color: $white-dark;
+  }
+}
+
+.bx.activebx {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(135deg);
+    border-radius: 2px;
+
+    width: 70%;
+    height: 2px;
+    display: block;
+
+    background-color: $white-dark;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(-315deg);
+    border-radius: 2px;
+
+    width: 70%;
+    height: 2px;
+    display: block;
+
+    background-color: $white-dark;
+  }
+}
+
+.cta-mobile {
+  display: none;
+  @include responsive(s) {
+    display: block;
+  }
+}
+
+.cta-desktop {
+  display: block;
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.logo {
+  max-width: 64px;
+  min-width: 48px;
+}
+
+.menu-mobile {
+  width: 100%;
+  height: 100vh;
+  transition: 0.7s ease;
+
+  position: absolute;
+  top: 0;
+  left: -100%;
+
+  background-color: rgba(6, 9, 15, 0.8);
+  backdrop-filter: blur(8px);
+
+  z-index: 900;
+
+  .nav-mobile {
+    margin-top: 80px;
+  }
+
+  li {
+    border-bottom: 1px solid $black-light;
+
+    .link-menu-mobile {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      padding: 24px 16px 24px 16px;
+      transition: 0.5s ease;
+
+      &:hover {
+        background-color: rgba(15, 20, 31, 0.7);
+        padding: 24px 16px 24px 28px;
+      }
+    }
+  }
+}
+
+.menu-mobile.showmenu {
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  transition: 0.7s ease;
+}

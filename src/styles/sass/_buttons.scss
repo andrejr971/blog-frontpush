@@ -1,0 +1,121 @@
+.btn {
+  display: inline-block;
+  color: $white-light;
+  transition: 0.6s ease;
+  padding: 8px 24px;
+  text-align: center;
+  border: 0;
+
+  background: linear-gradient(224.78deg, #5390e3 8.12%, #1357b3 92.21%);
+  border-radius: 4px;
+
+  @include typeface-2(p3, desktop);
+  @include responsive(s) {
+    @include typeface-2(p3, mobile);
+    padding: 16px 24px;
+  }
+  @include responsive(xs) {
+    @include typeface-2(p3, smallmobile);
+    padding: 16px 24px;
+  }
+
+  position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+a {
+  @include typeface-2(p3, desktop);
+  text-decoration: none;
+  color: $white-light;
+  transition: 0.5s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.link-title {
+  text-decoration: none;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link {
+  color: $primary-normal;
+}
+
+.link-footer {
+  padding: 8px 8px 8px 8px;
+
+  transition: 0.7s ease;
+
+  &:hover {
+    padding: 8px 8px 8px 16px;
+  }
+}
+
+input {
+  accent-color: $primary-normal;
+}
+
+/*
+input[type=text]{
+  padding: 8px 12px;
+  background-color: $black-light;
+  border: 0;
+  border-radius: 4px;
+  color: $white-light;
+
+  @include typeface-2(p3, desktop);
+}
+*/
+
+input,
+select,
+option,
+textarea {
+  padding: 10px 12px;
+  background-color: $black-light;
+  border: 0;
+  border-radius: 4px;
+  color: $white-light;
+  width: 100%;
+
+  @include typeface-2(p3, desktop);
+}
+
+input[type='date'],
+select,
+option {
+  height: 44px;
+}
+
+/*
+select{
+  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+*/
+
+.btn-search {
+  cursor: pointer;
+  height: 48px;
+  width: 56px;
+  background-image: url('../../assets/svg/icon-search.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  transform: translate3d(-6px, 0, 0);
+
+  background-color: $black-light;
+  border: 0;
+  border-radius: 4px;
+}

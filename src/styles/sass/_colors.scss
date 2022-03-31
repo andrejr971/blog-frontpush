@@ -1,0 +1,72 @@
+// Colors of project
+
+// Brand-colors
+$primary-normal: #1b69d2;
+$primary-dark: #1357b3;
+$primary-light: #5390e3;
+
+$secondary-normal: #1b69d2;
+$secondary-dark: #1357b3;
+$secondary-light: #5390e3;
+
+// Neutral-colors
+$black-normal: #0f141f;
+$black-dark: #06090f;
+$black-light: #151b26;
+$black-darken: #0f141f;
+
+$white-normal: #e8ebf0;
+$white-dark: #d8dbe3;
+$white-light: #f7f9fc;
+
+// Gray Scale
+$gray-1: #131414;
+$gray-2: #2b2b2c;
+$gray-3: #424344;
+$gray-4: #595a5c;
+$gray-5: #717274;
+$gray-6: #888a8c;
+$gray-7: #9ea0a3;
+
+// Auxiliary colors
+$red-normal: #f03d3d;
+$red-dark: #d03333;
+$red-light: #f05454;
+
+$green-normal: #0bb07b;
+$green-dark: #28bb49;
+$green-light: #50e170;
+
+$yellow-normal: #ffce52;
+$yellow-dark: #d9b043;
+$yellow-light: #ffd76b;
+
+.color-white {
+  color: $white-normal;
+}
+
+.color-primary {
+  color: $primary-light;
+}
+
+.color-gradient {
+  background: linear-gradient(224.78deg, #5390e3 8.12%, #1357b3 92.21%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-gray {
+  color: $gray-5;
+}
+
+.color-red {
+  color: $red-normal;
+}
+
+.color-green {
+  color: $green-normal;
+}
+
+.color-yellow {
+  color: $yellow-normal;
+}

@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="Logo" src="assets/svg/blog-logo2.svg" />
+    <br>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">
+  <p>Blog.</p>
 
-## Available Scripts
+  <p>O Blog é um projeto desenvolvido em ReactJS para o curso FrontPush.</p>
+</h4>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="https://andrejr.dev">
+    <img alt="Feito por André Junior" src="https://img.shields.io/badge/feito%20por-André Junior-blue">
+  </a>
+</p>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-como-instalar">Como instalar</a>&nbsp;&nbsp;&nbsp;
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="center">
+  <img alt="Scene" src="assets/img/banner-git.png">
+</p>
 
-### `yarn test`
+## :rocket: Tecnologias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-### `yarn build`
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [SASS](https://sass-lang.com/)
+- [ReactJS](https://pt-br.reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [React Router](https://reactrouter.com/)
+- [React Hook Forms](https://react-hook-form.com/)
+- [Json Server](https://github.com/typicode/json-server#add-custom-routes)
+- [Axios](https://github.com/axios/axios)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :information_source: Como instalar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para clonar e executar este aplicativo, você precisará do [Git](https://git-scm.com) instalado em seu computador. Da sua linha de comando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clonar este repositório
+$ git clone https://github.com/andrejr971/blog-frontpush.git
 
-### `yarn eject`
+# Navegue até o repositório
+$ cd blog-frontpush
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#instale os pacotes
+$ npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# A aplicação será aberta na porta:3000 - acesse http://localhost:300
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito by André Junior :wave: [portifólio](https://andrejr.dev)

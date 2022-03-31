@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo" src="assets/svg/blog-logo2.svg" />
+    <img alt="Logo" src="./assets/svg/blog-logo2.svg" />
     <br>
 </h1>
 
@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img alt="Scene" src="assets/img/banner-git.png">
+  <img alt="Scene" src="./assets/img/banner-git.png">
 </p>
 
 ## :rocket: Tecnologias
